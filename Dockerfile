@@ -3,9 +3,9 @@
 FROM centos:latest 
 MAINTAINER John Bencic
 
-VOLUME /drop
+VOLUME /Drop
 VOLUME /config
-VOLUME /movies
+VOLUME /Movies /Movies.unsorted
 
 RUN    yum update -y \
     && yum install -y epel-release \
